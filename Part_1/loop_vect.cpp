@@ -11,9 +11,16 @@ int loop(){
         for (int i = 0; i < 10000; i++) {
                 array1[i] = (rand()% 2001) - 1000;
                 array2[i] = (rand()% 2001) - 1000;
+                // array3[i] = array1[i] + array2[i];
+                //         arraySum += array3[i];
+        }
+
+        for(int i = 0; i < 10000; i++)
+        {
                 array3[i] = array1[i] + array2[i];
                         arraySum += array3[i];
         }
+
         return arraySum;
 }
 int foo(){
